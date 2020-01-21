@@ -1,3 +1,9 @@
+:root {
+    --margin: 170px;
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -14,8 +20,9 @@
 }
 
 body {
-    margin-left: 10rem;
+    margin-left: var(--margin);
     background-color: #282c34;  
+    overflow-x: hidden;
 }
 
 
@@ -29,13 +36,7 @@ body {
   }
 }
 
-p {
-    font-size: 15px !important;
-}
-
-h1 {
-    font-family: 'Font Name', Neucha;
-}
+.collapse.in { min-height: 50px;border: 1px solid blue; }
 
 .valeria-navbar {
     color: #282c34 !important;
@@ -70,7 +71,40 @@ h1 {
 .light-font {
     color: #ededed !important;
 }
+
+.handwriting-font {
+    font-family: 'Font Name', Neucha;
+}
 .size {
     font-size: 12px;
     color: #282c34;
+}
+
+.green p, .green li, .green a {
+    color: #727a46;
+}
+
+img {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+p {
+    text-align: left;
+    margin: 0px;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    font-size: 11px;
+}
+
+.card {
+    margin:2rem;
+}
+
+.artpage > div, .card-title {
+    color: #727a46;
 }

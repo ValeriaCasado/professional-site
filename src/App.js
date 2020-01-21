@@ -1,20 +1,23 @@
 import React from 'react';
 import NavbarLeft from './Elements/navbar-left.js'
 import MainPage from './Pages/main-page.js'
-//import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import ArtPage from './Pages/art-page.js'
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 //import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <NavbarLeft></NavbarLeft>
-      <MainPage></MainPage>
-
-    </div>
+    <Router>
+        <div className="App">
+        <NavbarLeft></NavbarLeft> 
+        <Switch>
+        <Route exact path="/" component={MainPage} />
+        <Route path="/art" component={ArtPage} />
+        </Switch>
+        </div>
+    </Router>
   );
 }
 
