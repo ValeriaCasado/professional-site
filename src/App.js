@@ -1,8 +1,8 @@
 import React from 'react';
 import NavbarLeft from './Elements/navbar-left.js'
 import MainPage from './Pages/main-page.js'
-import ArtPage from './Pages/art-page.js'
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import ArtPaget from './Pages/art-page2.js'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //import logo from './logo.svg';
 import './App.css';
@@ -14,7 +14,7 @@ function App() {
         <NavbarLeft></NavbarLeft> 
         <Switch>
         <Route exact path="/" component={MainPage} />
-        <Route path="/art" component={ArtPage} />
+        <Route path="/art" component={ArtPaget} />
         </Switch>
         </div>
     </Router>
